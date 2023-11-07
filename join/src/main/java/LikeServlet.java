@@ -41,6 +41,10 @@ public class LikeServlet extends HttpServlet {
 			
 			//Âò ¸ñ·Ï Á¶È¸ select
 			
+			String sql = "SELECT ID FROM USERINFO WHERE user_id=1";
+			
+			int likeId
+			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
