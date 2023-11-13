@@ -1,6 +1,6 @@
-package com.kh.likelist;
+package com.kh.semi.likeList;
 
-public class LikeList {
+public class LikeRealestate {
 	/*
 	
 	REALESTATE_NAME	VARCHAR2(255 BYTE)
@@ -19,7 +19,7 @@ public class LikeList {
 	private int realestateArea;
 	private String floors;
 	
-	public LikeList (String realestateName, String realestateType, String realestateCondition,
+	public LikeRealestate (String realestateName, String realestateType, String realestateCondition,
 					int realestateSaleprice, int realestateMonthly, int realestateArea, String floors) {
 		this.realestateName = realestateName;
 		this.realestateType = realestateType;
