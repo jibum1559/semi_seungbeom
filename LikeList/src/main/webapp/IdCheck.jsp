@@ -2,13 +2,13 @@
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="EUC-KR">
-<title>마이페이지 메인화면</title>
-<link rel="stylesheet" type="text/css" href="./css/MyPageMain.css">
-</head>
-<body>
-       <header>
+    <head>
+        <title>마이페이지 내 정보 ID 확인화면</title> 
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="./css/Idcheck.css">
+    </head>
+    <body>
+        <header>
             <div class="use_list_box">
                 <div class="use_list">
                     <p>
@@ -43,7 +43,7 @@
                 <ul>
                     <li class="mypage" ><img src="./img/마이페이지_아이콘.png" alt="마이페이지 아이콘">
                         마이페이지</li>
-                    <li><a href="IdCheck.jsp">내정보</a></li>
+                    <li style="color: #5887d6;"><a href="IdCheck.jsp">내정보</a></li>
                     <li><a href="MyPageLikeList.jsp">찜한 매물</a></li>
                     <li>내 문의내역</li>
                     <li>중개인 등록</li>
@@ -51,24 +51,24 @@
                 </ul>
                 <hr>
             </nav>
-        </section>
+		</section>
             <article class="main">
-                <h1 class="recent">최근 본 매물</h1><br>
+                <h1 class="myinfo">내 정보</h1><br>
                 <hr style="width: 96%;">
                 
-                <div class="realestate_area">
-                    <div class="realestate_box">
-                        <div class="realestate_list">
-                          <ul class="realestate">
-                                <li>
-                                <a href="매물 상세정보로 전환">
-                                최근 본 매물 정보
-                                </a>
-                                </li>
-                            </ul>
+                <div class="info_box">
+
+                    <div class="user_info">
+                        <div class="user_check">
+                            <label for="userid">아이디 :</label>
+                            <input type="text" id="userid" name="userid" placeholder=" 아이디 입력해주세요." required><br>
+                            <label for="password">비밀번호 :</label>
+                            <input type="password" id="password" name="password" placeholder=" 비밀번호 입력해주세요." required><br><br>
+                            <button type="submit" id="usercheck">확 인</button>                                
+                               
                         </div>
                     </div>
                 </div>
             </article>
-</body>
+    </body>
 </html>

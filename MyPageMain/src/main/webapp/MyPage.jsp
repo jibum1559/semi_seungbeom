@@ -5,30 +5,30 @@
 <head>
 <meta charset="EUC-KR">
 <title>마이페이지 메인화면</title>
-<link rel="stylesheet" type="text/css" href="./css/MyPageMain.css">
+<link rel="stylesheet" type="text/css" link href="MyPageMain.css">
 </head>
 <body>
        <header>
             <div class="use_list_box">
                 <div class="use_list">
                     <p>
-                        <a href="메인페이지로 이동" class="use_main">
+                        <a href="메인페이지로 이동" class="use_main" onclik>
                             <span><img src="./img/로고.png" class="logo"></span>
                         </a>
                     </p>
                     <ul class="use">
                         <li>
-                            <a href="메인페이지로 이동" class="use_logout" title="로그아웃">
+                            <a href="메인페이지로 이동" class="use_logout" title="로그아웃" onclik>
                                 <span><img src="./img/logout.png" class="logout"><br>LOGOUT</span>
                             </a>
                         </li>
                         <li>
-                            <a href="마이페이지로 이동" class="use_mypage" title="마이페이지">
+                            <a href="마이페이지로 이동" class="use_mypage" title="마이페이지" onclik>
                                 <span><img src="./img/유저.png" class="user"><br>MY</span>
                             </a>
                         </li>
                         <li>
-                            <a href="찜 매물 조회로 이동" class="use_likelist" title="찜매물">
+                            <a href="찜 매물 조회로 이동" class="use_likelist" title="찜매물" onclik>
                                 <span><img src="./img/찜.png" class="like"><br>찜</span>
                             </a>
                         </li>
@@ -43,7 +43,7 @@
                 <ul>
                     <li class="mypage" ><img src="./img/마이페이지_아이콘.png" alt="마이페이지 아이콘">
                         마이페이지</li>
-                    <li><a href="IdCheck.jsp">내정보</a></li>
+                    <li>내정보</li>
                     <li><a href="MyPageLikeList.jsp">찜한 매물</a></li>
                     <li>내 문의내역</li>
                     <li>중개인 등록</li>
@@ -51,7 +51,6 @@
                 </ul>
                 <hr>
             </nav>
-        </section>
             <article class="main">
                 <h1 class="recent">최근 본 매물</h1><br>
                 <hr style="width: 96%;">

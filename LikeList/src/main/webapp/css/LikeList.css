@@ -151,13 +151,17 @@
                 width: 15%;
                 height: 900px;
             }
-        
+        	
+        	/*마이페이지 카테고리 세로 구분 선*/
             .left_category hr {
                 height: 96%;
                 width: 0px;
                 position: relative;
                 top: -378px;
                 left: 142px;
-
-
+            }
+            /*a태그 색상 및 밑줄 없앰*/
+            a {
+                text-decoration: none;
+                color: inherit;
             }
