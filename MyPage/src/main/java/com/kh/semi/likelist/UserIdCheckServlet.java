@@ -7,6 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,8 +15,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet("/UserIdCheck")
-public class UserIdCheck extends HttpServlet {
+@WebServlet("/UserIdCheckServlet")
+public class UserIdCheckServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String jdbcURL = "jdbc:oracle:thin:@localhost:1521:xe";
 	    String jdbcUsername = "sm";
@@ -31,27 +32,47 @@ public class UserIdCheck extends HttpServlet {
 		try {
 			Connection conn = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
 			
-			String userid = request.getParameter("userID");
-			String userpw = request.getParameter("userPW");
+			String userid = request.getParameter("userid");
+			String userpw = request.getParameter("password");
 			
-			String sql = "SELECT FROM userinfo WHERE ID = ? AND PASSWORD = ?";
+			String sql = "SELECT * FROM userinfo WHERE ID = ? AND PASSWORD = ? AND USER_ID = ?";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			
-			ps.setString(1, userid);
+			ps.setNString(1, userid);
 			ps.setString(2, userpw);
+			ps.setInt(3, 3);
 			
 			ResultSet rs = ps.executeQuery();
-			
+			/*
+	 		USER_ID	NUMBER(5,0)
+			ID	VARCHAR2(50 BYTE)
+			PASSWORD	VARCHAR2(50 BYTE)
+			PWCHECK	VARCHAR2(50 BYTE)
+			PHONE_NUMBER	VARCHAR2(15 BYTE)
+			EMAIL	VARCHAR2(50 BYTE)
+			ADDRESS	VARCHAR2(50 BYTE)
+			 * */
 			if(rs.next()) {
 				HttpSession session = request.getSession();
-				session.setAttribute("userID", userid);
-				session.setAttribute("userPW", userpw);
+				session.setAttribute("userid", rs.getString("id"));
+				session.setAttribute("password", rs.getString("password"));
+				session.setAttribute("phonenumber", rs.getString("phone_number"));
+				session.setAttribute("email", rs.getString("EMAIL"));
+				session.setAttribute("address", rs.getString("ADDRESS"));
 				
-				response.sendRedirect("내 정보 조회 페이지.jsp");
+				response.sendRedirect("MyInfo.jsp");
+			} else {
+				//잘못 입력 시 "아이디 또는 비밀번호가 일치하지 않습니다." 팝업창 띄우기
+				response.sendRedirect("IdCheck.jsp?error=true");
+				request.setAttribute("error", "true");
+				 
+			   // RequestDispatcher rd = request.getRequestDispatcher("IdCheck.jsp");
+			    
 			}
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
+			//response.sendRedirect("MyInfo.jsp");
 			e.printStackTrace();
 		}
 	}

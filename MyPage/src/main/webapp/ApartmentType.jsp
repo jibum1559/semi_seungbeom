@@ -27,12 +27,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="마이페이지로 이동" class="use_mypage" title="마이페이지">
+                            <a href="MyPage.jsp" class="use_mypage" title="마이페이지">
                                 <span><img src="./img/유저.png" class="user"><br>MY</span>
                             </a>
                         </li>
                         <li>
-                            <a href="찜 매물 조회로 이동" class="use_likelist" title="찜매물">
+                            <a href="MyPageLikeList.jsp" class="use_likelist" title="찜매물">
                                 <span><img src="./img/찜.png" class="like"><br>찜</span>
                             </a>
                         </li>
@@ -105,6 +105,5 @@
                     </div>
                 </div>
             </article>
-    </div>
 </body>
 </html>

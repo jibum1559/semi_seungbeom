@@ -1,11 +1,12 @@
 @charset "EUC-KR";
-  *{box-sizing: border-box;}
+            *{box-sizing: border-box;}
 
             header {
             height: 190px;
             background: linear-gradient(to right, #6190E8, #A7BFE8);       
             }
 
+            /*상단부 로고, 로그인/로그아웃, 마이페이지, 찜 부분*/
             .use_list p {
                 position: relative;
                 top: 20px;
@@ -62,6 +63,8 @@
                 top: 0px;
                 left: 0px;
             }
+
+            /*좌측 마이페이지 카테고리 부분*/
             .mypage {
                 position: relative;
                 right: 98px;
@@ -77,8 +80,6 @@
                 width: 46px;
                 height: auto;
                 
-                
-
             }
             .main {
                /* background-color: antiquewhite; */
@@ -87,44 +88,21 @@
                 height: 900px;
             }
 
-            .recent {
+            .myinfo {
                 position: relative;
                 left: 53px;
                 top: 42px;
                 font-size: 25px;
             }
 
-            .type_box {
+            /*내 정보 우측 주석*/
+            .annotation {
                 position: relative;
-                left: 38px;
-                font-size: 15px;
+                left: 150px;
+                bottom: 3px;
+                color: #a1a1a1;
                 font-weight: bold;
-                margin-bottom: 10px;
-            }
-
-            .type {
-                list-style-type: none;
-                display: flex;
-                flex-direction: row;
-            }
-
-            .type li {
-                margin-right: 50px;
-            }
-
-            .realestate {
-                list-style-type: none;
-                display: flex;
-                flex-direction: row;
-                position: relative;
-                top: 100px;
-            }
-
-            .realestate li {
-                position: relative;
-                left: 100px;
-                margin-right: 300px;
-
+                
             }
 
             /*좌측 카테고리*/
@@ -157,7 +135,74 @@
                 left: 142px;
             }
             
-             /*a태그 색상 및 밑줄 없앰*/
+            /*내정보 수정 탭*/
+            .info_box {
+                border: 2px solid #dddddd;
+                border-radius: 10px;
+                box-shadow: 5px 5px 17px rgba(0, 0, 0, 0.2);
+                width: 1000px;
+                height: 700px;
+                position: relative;
+                left: 180px;
+                top: 40px;
+            }
+
+            .info_box img {
+                width: 10%;
+                height: auto;
+                position: relative;
+                left: 45%;
+                top: 15%;
+            }
+
+            .user_info {
+                text-align: center;
+                position: relative;
+                right: 3%;
+                margin-top: 13%;
+            }
+            
+            /*아이디, 비밀번호 라벨 정렬*/
+            .user_check label {
+                font-size: 14px;
+                font-weight: 700;
+                text-align: right;
+                color: #1b1b1b;
+                display: inline-block;
+                width: 93px;
+                height: 40px;
+            }
+
+            /*입력칸 스타일 조정*/
+            .user_check input {
+                width: 250px;
+                height: 28px;
+                margin-top: 5px;
+                border-color: #d6d6d6;
+                border-radius: 2px;
+                border-width: 1px;
+            }
+
+             /*입력 안내문자 크기 조절*/
+            .user_check ::placeholder {
+                font-size: 11px;
+            }
+            
+            /*확인 버튼 스타일 조정*/
+            .user_check button {
+                width: 59px;
+                height: 22px;
+                border-radius: 3px;
+                border-width: 1px;
+                background-color:rgb(124, 124, 124); 
+                color: #ffffff;
+                font-size: 11px;
+                font-weight: 600;
+                position: relative;
+                left: 108px;
+            }
+
+            /*a태그 밑줄 밑 색상 제거*/
             a {
                 text-decoration: none;
                 color: inherit;
