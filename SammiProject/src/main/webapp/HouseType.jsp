@@ -16,13 +16,13 @@
             <div class="use_list_box">
                 <div class="use_list">
                     <p>
-                        <a href="메인페이지로 이동" class="use_main">
+                        <a href="Main.jsp" class="use_main">
                             <span><img src="./img/로고.png" class="logo"></span>
                         </a>
                     </p>
                     <ul class="use">
                         <li>
-                            <a href="메인페이지로 이동" class="use_logout" title="로그아웃">
+                            <a href="logout.jsp" class="use_logout" title="로그아웃">
                                 <span><img src="./img/logout.png" class="logout"><br>LOGOUT</span>
                             </a>
                         </li>

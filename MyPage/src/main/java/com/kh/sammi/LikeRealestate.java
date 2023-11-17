@@ -1,4 +1,4 @@
-package com.kh.semi.likeList;
+package com.kh.sammi;
 
 public class LikeRealestate {
 	/*

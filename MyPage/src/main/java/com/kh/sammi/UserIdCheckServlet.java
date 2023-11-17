@@ -1,4 +1,4 @@
-package com.kh.semi.likeList;
+package com.kh.sammi;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -62,7 +62,7 @@ public class UserIdCheckServlet extends HttpServlet {
 				
 				response.sendRedirect("MyInfo.jsp");
 			} else {
-				//Àß¸ø ÀÔ·Â ½Ã "¾ÆÀÌµð ¶Ç´Â ºñ¹Ð¹øÈ£°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù." ÆË¾÷Ã¢ ¶ç¿ì±â
+				//ï¿½ß¸ï¿½ ï¿½Ô·ï¿½ ï¿½ï¿½ "ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Ç´ï¿½ ï¿½ï¿½Ð¹ï¿½È£ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ï¿½ï¿½ ï¿½Ê½ï¿½ï¿½Ï´ï¿½." ï¿½Ë¾ï¿½Ã¢ ï¿½ï¿½ï¿½ï¿½
 				response.sendRedirect("IdCheck.jsp?error=true");
 				request.setAttribute("error", "true");
 				 

@@ -1,0 +1,370 @@
+ *{
+ box-sizing: border-box;
+ }
+	/*메인페이지*/
+			header {
+		    position: relative;
+		    width: 100%;
+		    bottom: 16px;
+		    height: 200px;
+		    background: linear-gradient(to right, #6190E8, #A7BFE8);
+		  
+			}
+	
+			.use_list p {
+                position: relative;
+                top: 20px;
+                left: 30px;
+            }
+
+            .use {
+                list-style-type: none;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .use li {
+                position: relative;
+                top: -90px;
+                left: 1560px;
+                margin-right: 28px;
+                text-align: center;
+                font-size: 13px;
+            }
+
+            .use p {
+                position: relative;
+                left: 10px;
+                top: 10px;
+                font-size: 10px;
+                margin-right: 10px;
+            }
+
+            .logo {
+                width: 150px;
+                height: auto; 
+                margin-top: 0px;
+                margin-left: 0px;
+            }
+            .logout{
+                width: 42px;
+                height: auto;
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+            .user{
+                width: 42px;
+                height: auto;
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+            .like{
+                width: 42px;
+                height: auto;
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+            .mypage {
+                position: relative;
+                left: -98px;
+                font-size: 33px;
+                width: 137%;
+                
+            }
+
+            .mypage img {
+                position: relative;
+                left: 5px;
+                top: 4px;
+                width: 46px;
+                height: auto;
+
+            }
+            
+            
+            footer {
+            	text-align:center;
+            	float:bottom;
+            }
+            
+            .img-container {
+	            align-items:center;
+	            display:flex;
+	            margin-left:300px;
+            
+            }
+            
+            .img-container img {
+           		margin-right:50px;
+            
+            }
+            
+            .image {
+			    width:300px;
+			    height:300px;
+			    margin: 10px;
+			}
+			
+			#prevPage {
+				position: relative;
+				padding: 10px 20px;
+				color: black;
+			    background-color:white;
+				border: none;
+				cursor: pointer;
+				
+			
+			}
+			
+			#nextPage {
+				margin:100px;
+			
+			}
+			
+			
+			            
+            /*로그인 페이지*/
+            #loginDiv {
+            padding:50px;
+           
+            }
+            
+            #loginId {
+            margin-left:39px;
+           
+            }
+            
+            #loginPw{
+            margin-left:-30px;
+            }
+            
+            
+			section {
+				background:#e2e2e2;
+				position: absolute;	
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			 .transparent-section {
+            background-color: rgba(89, 86, 86, 0.3);
+			 }
+           
+            
+            #createButton {
+           	border:none;
+            border-radius:5px;
+            padding:10px;
+            margin-top:20px;
+            margin-left:30px;
+            background:linear-gradient(45deg,#cbccff,#00a3ff);
+            color:#4e1a03;
+            cursor:pointer;
+            }
+            
+            #loginButton {
+         	border:none;
+            border-radius:5px;
+            padding:10px;
+            margin-left:40px;
+            background:linear-gradient(45deg,#cbccff,#00a3ff);
+            color:#4e1a03;
+            cursor:pointer;
+            }
+           
+            h1 {
+            border-radius:5px;
+            margin-left:95px;
+            width:150px;
+            text-align:center;
+            color:white;
+            }
+            
+            label {
+            color:white;
+            }
+           
+            
+            
+            
+            #loginBody {
+             background-image: url('../img/zip.jpg');
+		     background-repeat: no-repeat;
+		     background-position: center;
+		     background-size: cover;
+		     height:100vh;
+            }
+            
+            /*회원가입 페이지*/
+            
+            
+            
+            #createBody {
+	             background-image: url('../img/dd.jpg');
+			     background-repeat: no-repeat;
+			     background-position: center;
+			     background-size: cover;
+			     height:100vh;
+            }
+            
+            #checkButton{
+	            border:none;
+	            border-radius:5px;
+	            margin-left:15px;
+	            margin-left:15px;
+	            font-size : 13px;
+	            background:linear-gradient(45deg,violet,orange);
+	            cursor:pointer;
+            }
+            
+            #checkPwButton {
+	            border:none;
+	            border-radius:5px;
+	            margin-left:15px;
+	            font-size: 12px;
+	            margin-right : 20px;
+	            background:linear-gradient(45deg,violet,orange);
+	            cursor:pointer;
+            }
+            
+            #createIdButton{
+	            padding:5px;
+	            border:none;
+	            border-radius:5px;
+	            background:linear-gradient(45deg,violet,orange);
+	            cursor:pointer;
+            }
+            
+            #createIdButton:hover {
+	        	background: linear-gradient(45deg,violet,pink);
+	        	color:#4e1a03;
+	        	box-shadow : 5px 5px 3px rgba(1, 1, 2, 0.5);
+   			}	
+            
+            #d0 {
+            	margin-left:102px;
+            }
+            
+            #d1 {
+            	margin-left:86px;
+            }
+			
+			#d2 {
+				margin-left:50px;
+			}
+            
+           	#d3 {
+           		margin-left:88px;
+           	}
+           	
+           	#d4 {
+           		margin-left:104px;
+           	}
+           	
+           	#d5 {
+           		margin-left:120px;
+           	}
+           	
+           	#d6 {
+	            margin-top: 20px;
+			    margin-left: 200px;
+			    margin-bottom: 10px;
+           	}
+           	
+           	#hDiv {
+           		margin-left:50px;
+           	}
+            
+            /*메인 페이지*/
+            
+            #mainBody {
+            background-image: url('../img/build.jpg');
+			     background-repeat: no-repeat;
+			     background-position: center;
+			     background-size: cover;
+			     height:100vh;
+            
+            }
+            
+            #mainDiv {
+   			background: beige;
+   			
+            
+            }
+            
+            #mainDiv{
+            background-color: rgba(89, 86, 86, 0.7);
+			}
+            
+            #hh {
+            margin-left : 700px;
+            text-align:center;
+            color:black;
+            width:500px;
+            background:white;
+            }
+            
+            #imageSize{
+            width:200px;
+            height:300px;
+            }
+            
+            
+            
+            
+            
+            /*회원탈퇴*/
+            #deleteBody {
+	             background-image: url('../img/delete.png');
+			     background-repeat: no-repeat;
+			     background-position: center;
+			     background-size: cover;
+			     height:100vh;
+            }
+            
+            #deleteId {
+            margin-left:46px;
+            margin-right:50px;
+            }
+         
+         	#deletePw {
+         	margin-left:30px;
+         	margin-right:50px;
+         	}
+         	
+         	#deleteButton {
+         	border:none;
+         	border-radius:5px;
+         	padding:10px;
+         	margin-left :130px;
+			margin-bottom : 20px;
+			background:linear-gradient(45deg,orange,red);
+			color:white;
+			cursor:pointer;
+			
+         	}
+         	
+         	#deleteButton:hover {
+         	background: white;
+	        color:red;
+	        box-shadow : 5px 5px 3px rgba(1, 1, 2, 0.5);
+         	}
+           	
+           	h2 {
+           	color:white;
+           	
+           	}
+           	
+           	a{
+           	color:white;
+           	}
+           	
+           	
+           	p {
+           	color:white;
+           	}
+           	
+            

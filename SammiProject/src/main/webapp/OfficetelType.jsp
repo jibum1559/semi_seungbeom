@@ -16,18 +16,18 @@
             <div class="use_list_box">
                 <div class="use_list">
                     <p>
-                        <a href="메인페이지로 이동" class="use_main">
+                        <a href="Main.jsp" class="use_main">
                             <span><img src="./img/로고.png" class="logo"></span>
                         </a>
                     </p>
                     <ul class="use">
                         <li>
-                            <a href="메인페이지로 이동" class="use_logout" title="로그아웃">
+                            <a href="logout.jsp" class="use_logout" title="로그아웃">
                                 <span><img src="./img/logout.png" class="logout"><br>LOGOUT</span>
                             </a>
                         </li>
                         <li>
-                            <a href="MyPage.jsp" class="use_mypage" title="마이페이지">
+                           <a href="MyPage.jsp" class="use_mypage" title="마이페이지">
                                 <span><img src="./img/유저.png" class="user"><br>MY</span>
                             </a>
                         </li>
@@ -67,9 +67,9 @@
                             <li><a href="MyPageLikeList.jsp">전체매물</a></li>
                             <li><a href="ApartmentType.jsp">아파트</a></li>
                             <li><a href="VillaType.jsp">빌라</a></li>
-                            <li><a href="OfficetelType.jsp">오피스텔</a></li>
+                            <li style="color: #5887d6;"><a href="OfficetelType.jsp">오피스텔</a></li>
                             <li><a href="StudioType.jsp">원룸</a></li>
-                            <li style="color: #5887d6;"><a href="HouseType.jsp">주택</a></li>
+                            <li><a href="HouseType.jsp">주택</a></li>
                         </ul>
                         <hr style="width: 96%;">
                     </div>
@@ -81,7 +81,7 @@
                             <ul class="realestate">
     <% 
 	    LikeListDAO likelistDAO = new LikeListDAO();
-	    List<LikeRealestate> LikeRealestates = likelistDAO.getHouseType();
+	    List<LikeRealestate> LikeRealestates = likelistDAO.getOfficetelType();
 	    
 	    for(LikeRealestate l : LikeRealestates) {
 	%>                  

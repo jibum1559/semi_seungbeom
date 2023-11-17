@@ -1,33 +1,25 @@
-package com.kh.semi.likeList;
+package com.kh.sammi;
 
 public class UserInfo {
-	/*
-	USER_ID
-	ID
-	PASSWORD
-	PWCHECK
-	PHONE_NUMBER
-	EMAIL
-	ADDRESS 
-	 */
+	
 	private int userId;
 	private String id;
 	private String password;
-	private String pwCheck;
 	private String phoneNumber;
 	private String eMail;
 	private String address;
 	
-	public UserInfo (int userId, String id, String password, String pwCheck, String phoneNumber, String eMail, String address) {
-		this.userId = userId;
-		this.id = id;
-		this.password = password;
-		this.pwCheck = pwCheck;
-		this.phoneNumber = phoneNumber;
-		this.eMail = eMail;
-		this.address = address;
+public UserInfo(int userId,String id,String password,String phoneNumber,String eMail,String address) {
+	this.userId = userId;
+	this.id = id;
+	this.password = password;
+	this.phoneNumber = phoneNumber;
+	this.eMail = eMail;
+	this.address = address;
+		
 		
 	}
+	
 	public int getUserId() {
 		return userId;
 	}
@@ -50,14 +42,6 @@ public class UserInfo {
 
 	public void setPassword(String password) {
 		this.password = password;
-	}
-
-	public String getPwCheck() {
-		return pwCheck;
-	}
-
-	public void setPwCheck(String pwCheck) {
-		this.pwCheck = pwCheck;
 	}
 
 	public String getPhoneNumber() {
@@ -84,5 +68,5 @@ public class UserInfo {
 		this.address = address;
 	}
 
-
+	
 }
